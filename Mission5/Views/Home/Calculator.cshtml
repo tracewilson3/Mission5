@@ -1,19 +1,21 @@
-@page
-@model Mission5.Views.Home.Calculator
+<h2>Coaching/Consulting Request Form</h2>
+<form id="quoteForm">
+    <label>How can I help you? (Training plan, route recommendations, personalized coaching, etc.) </label>
+    <br />
+    <textarea id="txtDescription" cols="30" rows="5"></textarea>
+    <br />
 
-@{
-    Layout = null;
-}
+    <label>Hourly Rate ($):</label>
+    <input type="text" id="hourlyRate" value="40" readonly />
+    <br />
 
-<!DOCTYPE html>
+    <label>Hours Requested:</label>
+    <input type="number" id="numHours" min="0" max="50" />
+    <br />
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    
-</div>
-</body>
-</html>
+    <label>Estimated Cost ($):</label>
+    <input type="text" id="estimatedCost" readonly />
+    <br />
+
+    <input type="submit" value="Request Quote" id="btnSubmit" />
+</form>
